@@ -6,49 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Shoppie - Man summer collection</title>
+  
+  <title>CRazy Deals - Man summer collection</title>
   <meta name="title" content="Shoppie - Man summer collection">
   <meta name="description" content="This is an eCommerce html template made by codewithsadee">
 
-  <!-- 
-    - favicon
-  -->
+
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/fonts/font.css">
 
-  <!-- 
-    - custom css link
-  -->
+ 
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - preload images
-  -->
+
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
 
 </head>
 
 <body>
 
-  <!-- 
-    - #HEADER
-  -->
+
+  <main>
+    <button id="getLocationBtn" onclick="getLocation()">Get My Location</button>
+</main>
+
+<script src="script.js"></script>
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p>This website wants to access your location. Do you want to allow it?</p>
+    <button onclick="getLocation()">Allow</button>
+</div>
 
   <header class="header" data-header>
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="132" height="27" alt="shoppie home">
+        <img src="./assets/images/download.png" width="132" height="27" alt="shoppie home">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -70,12 +67,16 @@
             <a href="#" class="navbar-link">Shop</a>
           </li>
 
+          <li>
+            <a href="reward.html" class="navbar-link">Rewards</a>
+          </li>
+
         </ul>
 
         <button class="cart-btn">
           <ion-icon name="bag" aria-hidden="true"></ion-icon>
 
-          <span class="span">Cart (02)</span>
+          <span class="span">Cart (00)</span>
         </button>
 
         <a href="#" class="btn">Contact Us</a>
@@ -86,31 +87,36 @@
       </button>
 
     </div>
+    <div id="locationModal" class="modal">
+      
+  </div>
+  
   </header>
 
 
 
 
 
-  <main>
-    <article>
+  <main>    <article>
 
-      <!-- 
-        - #HERO
-      -->
+    <!-- 
+      - #HERO
+    -->
 
-      <div class="hero">
-        <div class="container">
+    <div class="hero">
+      <div class="container">
 
-          <div class="hero-content">
+        <div class="hero-content">
 
-            <p class="hero-subtitle title">$120.00</p>
+          <p class="hero-subtitle title">Rs1200.00</p>
 
-            <h1 class="h1 hero-title title">Man summer <br> collection</h1>
+          <h1 class="h1 hero-title title">Man summer <br> collection</h1>
 
-            <p class="hero-text">
-              This is the factor that sets us apart from competition and allows us deliver a specialist business service
-              team applies its ranging experience determining
+          <p class="hero-text">
+            This is the factor that sets us apart from competition and allows us deliver a specialist business service
+            team applies its ranging experience determining
+
+             
             </p>
 
             <a href="#" class="btn btn-primary">
@@ -126,7 +132,7 @@
               <img src="./assets/images/hero-banner.png" width="704" height="700" alt="hero banner" class="img-cover">
             </figure>
 
-            <img src="./assets/images/hero-shape-1.png" width="255" height="249" alt="shape" class="shape shape-1">
+            <img src="./assets/images/hero-shape-1.png" width="0" height="0" alt="shape" class="shape shape-1">
           </div>
 
           <img src="./assets/images/hero-shape-2.png" width="360" height="133" alt="shape" class="shape shape-2">
@@ -135,12 +141,6 @@
       </div>
 
 
-
-
-
-      <!-- 
-        - #PRODUCT
-      -->
 
       <section class="section product" aria-label="product">
         <div class="container">
@@ -173,7 +173,7 @@
                     <a href="#" class="card-title">Short Sleeve Shirt</a>
                   </h3>
 
-                  <span class="price">$170.00</span>
+                  <span class="price">Rs 1700.00</span>
 
                 </div>
 
@@ -204,7 +204,7 @@
                     <a href="#" class="card-title">Dead Sunglasses</a>
                   </h3>
 
-                  <span class="price">$210.00</span>
+                  <span class="price">Rs 2100.00</span>
 
                 </div>
 
@@ -235,7 +235,7 @@
                     <a href="#" class="card-title">Studios Trouser</a>
                   </h3>
 
-                  <span class="price">$90.00</span>
+                  <span class="price">Rs 900.00</span>
 
                 </div>
 
@@ -246,14 +246,6 @@
 
         </div>
       </section>
-
-
-
-
-
-      <!-- 
-        - #FEATURE
-      -->
 
       <section class="section feature" aria-label="feature-label">
         <div class="container">
@@ -285,7 +277,7 @@
                     <a href="#" class="card-title">Acne Baseball Cap</a>
                   </h3>
 
-                  <span class="price">$80.00</span>
+                  <span class="price">Rs 80.00</span>
                 </div>
 
               </div>
@@ -314,7 +306,7 @@
                     <a href="#" class="card-title">Short Sleeve Shirt</a>
                   </h3>
 
-                  <span class="price">$170.00</span>
+                  <span class="price">Rs 1700.00</span>
                 </div>
 
               </div>
@@ -343,7 +335,7 @@
                     <a href="#" class="card-title">Garcons Parfums</a>
                   </h3>
 
-                  <span class="price">$190.00</span>
+                  <span class="price">Rs 1900.00</span>
                 </div>
 
               </div>
@@ -372,7 +364,7 @@
                     <a href="#" class="card-title">Salomon Sneaker</a>
                   </h3>
 
-                  <span class="price">$450.00</span>
+                  <span class="price">Rs 4500.00</span>
                 </div>
 
               </div>
@@ -401,7 +393,7 @@
                     <a href="#" class="card-title">Ribbed Beanie Hat</a>
                   </h3>
 
-                  <span class="price">$120.00</span>
+                  <span class="price">Rs 1200.00</span>
                 </div>
 
               </div>
@@ -430,7 +422,7 @@
                     <a href="#" class="card-title">Acronym Khaki</a>
                   </h3>
 
-                  <span class="price">$220.00</span>
+                  <span class="price">Rs 2200.00</span>
                 </div>
 
               </div>
@@ -444,19 +436,12 @@
       </section>
 
 
-
-
-
-      <!-- 
-        - #OFFER
-      -->
-
       <section class="offer has-bg-image" style="background-image: url('./assets/images/offer-bg.png')">
         <div class="container">
 
           <div class="offer-card">
 
-            <h2 class="title card-title">35% Off</h2>
+            <h2 class="title card-title">25% Off</h2>
 
             <p class="card-text">
               This is the main factor that sets us apart our competition and allows us deliver a specialist business
@@ -478,13 +463,6 @@
   </main>
 
 
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
   <footer class="footer">
     <div class="container">
 
@@ -493,7 +471,7 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="132" height="27" loading="lazy" alt="shoppie home">
+            <img src="./assets/images/download.png" width="132" height="27" loading="lazy" alt=" home">
           </a>
 
           <p class="footer-text">
@@ -531,17 +509,17 @@
             <p class="footer-list-title title">Contact info</p>
 
             <address class="footer-text">
-              Neal St, London WC2H 9PR <br>
-              United Kingdom
+             Greater Noida <br>
+             UP India
             </address>
           </li>
 
           <li>
-            <a href="mailto:info.shoppie@support.com" class="email">info.shoppie@support.com</a>
+            <a href="mailto:info.crazysales@support.com" class="email">info.crazydeals@support.com</a>
           </li>
 
           <li>
-            <a href="tel:+00 123 456 789" class="call">+00 123 456 789</a>
+            <a href="tel:+00 123 456 789" class="call">+91 9122107950</a>
           </li>
 
         </ul>
@@ -580,7 +558,7 @@
         </div>
 
         <p class="copyright">
-          &copy; 2022 codewithsadee, All Rights Reserved
+          &copy; This was our Project :)
         </p>
 
       </div>
@@ -599,16 +577,9 @@
 
 
 
-
-
-  <!-- 
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
 
-  <!-- 
-    - ionicon link
-  -->
+ 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
